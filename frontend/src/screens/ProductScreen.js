@@ -56,10 +56,20 @@ const ProductScreen = () => {
     fetchData();
   }, [slug]);
   const { state, dispatch: contextDispatch } = useContext(Store);
-  const AddToCartHandler = () => {
+  const { cart } = state;
+  const AddToCartHandler = async () => {
+    // only one product added and next time you click the same product then its quantity increased not the whole product passed,
+    // in case if user click same item multiple times
+    const existItem = cart.cartItems.find((x) => x._id === product._id);
+    const quantity = existItem ? existItem.quantity + 1 : 1;
+    // ajax request
+    const { data } = await axios.get(`/api/products/${product._id}`);
+    if (data.countInStock < quantity) {
+      window.alert("sorry, product is out of stock");
+    }
     contextDispatch({
       type: "CART_ADD_ITEM",
-      payload: { ...product, quantity: 1 },
+      payload: { ...product, quantity },
     });
   };
   return loading ? (
