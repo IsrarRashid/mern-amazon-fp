@@ -1,0 +1,4 @@
+npm install nodemon --save-dev
+i used "--save-dev" because i don't want to ship this package to production, it is just for development,
+and when development is done i am not going to use it anymore.
+

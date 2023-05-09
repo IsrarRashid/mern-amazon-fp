@@ -1,0 +1,22 @@
+==============fetch products==================
+we need to improve the implementation, currently we cannot handle states like loading 
+products, showing errors when there is a error in backend and handling state throughout 
+the component, for this we use useReducer hook to manage complex states in react application.
+
+==============manage state by reducer hook==================
+now we replace useState with useReducer to manage complex states in the home screen component
+when we want to send ajax request to backend, state is complex and next state depends upon previous one.
+therefore we prefer useReducer over useState for managing state component.
+
+case "FETCH_SUCCESS":
+      // action.payload contains all products from backend
+      return { ...state, products: action.payload, loading: false }; 
+
+for useReducer we need to define an array that contains two values, 
+first is object that contain loading, error and products, and second 
+parameter is dispatch, we use dispatch to call an action and update the state.
+useReducer accepts two parameters, the first is reducer which we define above and second one is default state
+
+const [{ loading, error, products }, dispatch] = useReducer;
+
+npm i use-reducer-logger 
