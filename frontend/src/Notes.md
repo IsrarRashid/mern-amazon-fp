@@ -161,3 +161,13 @@
 # 2. click handler for remove item
 
 # 3. click handler for checkout
+
+# ============================================
+
+# SECTION-15:Complete Sign In Screen
+
+# 1. create sign in form
+
+# 2. add email and password
+
+# 3. add signin button
