@@ -171,3 +171,15 @@
 # 2. add email and password
 
 # 3. add signin button
+
+# ============================================
+
+# SECTION-16:Connect to MongoDB Database
+
+# 1. create atlas mongodb database
+
+# 2. install local mongodb database
+
+# 3. npm install mongoose
+
+# 4. connect to mongodb database

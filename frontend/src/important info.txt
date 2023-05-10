@@ -20,3 +20,5 @@ useReducer accepts two parameters, the first is reducer which we define above an
 const [{ loading, error, products }, dispatch] = useReducer;
 
 npm i use-reducer-logger 
+
+mongoose is an object modeling for nodejs
