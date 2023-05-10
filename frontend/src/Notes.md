@@ -190,10 +190,18 @@
 
 # 1. create product model
 
-# 2. create user model
+# 2. create seed route
 
-# 3. create seed route
+# 3. use route in server.js
 
-# 4. use route in server.js
+# 4. seed sample product
 
-# 5. seed sample product
+# ============================================
+
+# SECTION-18: Seed Sample Users
+
+# 1. create user model
+
+# 2. seed sample users
+
+# 3. create seed routes
