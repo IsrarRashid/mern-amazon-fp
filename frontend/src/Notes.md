@@ -124,7 +124,7 @@
 
 # SECTION-11:Implement Add To Cart
 
-# 1. Create React Component
+# 1. Create React Context
 
 # 2. Define Reducer
 
@@ -143,3 +143,21 @@
 # 2. check count in stock in backend
 
 # ============================================
+
+# SECTION-13:Create Cart Screen
+
+# 1. Create 2 Colums
+
+# 2. Display items list
+
+# 3. create action column
+
+# ============================================
+
+# SECTION-14:Complete Cart Screen
+
+# 1. click handler for inc/dec items
+
+# 2. click handler for remove item
+
+# 3. click handler for checkout
