@@ -43,7 +43,13 @@ const Product = ({ product }) => {
             Out of Stock
           </Button>
         ) : (
-          <Button onClick={() => addToCartHandler(product)}>Add To Cart</Button>
+          <Button
+            variant="outline-warning"
+            className="text-dark"
+            onClick={() => addToCartHandler(product)}
+          >
+            Add To Cart
+          </Button>
         )}
       </Card.Body>
     </Card>

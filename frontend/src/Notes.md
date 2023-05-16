@@ -205,3 +205,13 @@
 # 2. seed sample users
 
 # 3. create seed routes
+
+# ============================================
+
+# SECTION-19: Create Sign in backend api
+
+# 1. create sign in api
+
+# 2. npm install json web token
+
+# 3. define generate Token
