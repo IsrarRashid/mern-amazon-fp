@@ -10,6 +10,7 @@ import SignInScreen from "./screens/SignInScreen";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import ShippingAddressScreen from "./screens/ShippingAddressScreen";
+import SignUpScreen from "./screens/SignUpScreen";
 
 function App() {
   const { state, dispatch: contextDispatch } = useContext(Store);
@@ -77,6 +78,7 @@ function App() {
               <Route path="/" element={<HomeScreen />} />
               <Route path="/cart" element={<CartScreen />} />
               <Route path="/signin" element={<SignInScreen />} />
+              <Route path="/signup" element={<SignUpScreen />} />
               <Route path="/shipping" element={<ShippingAddressScreen />} />
             </Routes>
           </Container>
