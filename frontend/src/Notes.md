@@ -215,3 +215,13 @@
 # 2. npm install json web token
 
 # 3. define generate Token
+
+# ============================================
+
+# SECTION-20: Complete Signin Screen
+
+# 1. handle submit action
+
+# 2. save token in store and local storage
+
+# 3. show user name in header
