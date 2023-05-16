@@ -9,6 +9,7 @@ import CartScreen from "./screens/CartScreen";
 import SignInScreen from "./screens/SignInScreen";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import ShippingAddressScreen from "./screens/ShippingAddressScreen";
 
 function App() {
   const { state, dispatch: contextDispatch } = useContext(Store);
@@ -17,6 +18,7 @@ function App() {
   const signoutHandler = () => {
     contextDispatch({ type: "USER_SIGNOUT" });
     localStorage.removeItem("userInfo");
+    localStorage.removeItem("shippingAddress");
   };
   return (
     <Router>
@@ -75,6 +77,7 @@ function App() {
               <Route path="/" element={<HomeScreen />} />
               <Route path="/cart" element={<CartScreen />} />
               <Route path="/signin" element={<SignInScreen />} />
+              <Route path="/shipping" element={<ShippingAddressScreen />} />
             </Routes>
           </Container>
         </main>
