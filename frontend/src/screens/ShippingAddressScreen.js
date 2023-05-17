@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
-import { Form } from "react-bootstrap";
+import { Button, Form } from "react-bootstrap";
 import { Helmet } from "react-helmet-async";
 import { useNavigate } from "react-router-dom";
 import { Store } from "../Store";
@@ -103,9 +103,9 @@ const ShippingAddressScreen = () => {
             ></Form.Control>
           </Form.Group>
           <div className="mb-3">
-            <button variant="primary" type="submit">
+            <Button variant="primary" type="submit">
               Continue
-            </button>
+            </Button>
           </div>
         </Form>
       </div>
